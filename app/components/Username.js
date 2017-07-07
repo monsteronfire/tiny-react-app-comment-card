@@ -4,7 +4,7 @@ class Username extends React.Component {
   render() {
     return (
       <div className='username'>
-        Username
+        <p>{this.props.username}</p>
       </div>
     )
   }

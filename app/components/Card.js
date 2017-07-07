@@ -10,9 +10,9 @@ class Card extends React.Component {
       <div className='card'>
         <Picture url={this.props.item.url}/>
         <div className='user-info'>
-          <Username/>
-          <Comments/>
-          <Actions/>
+          <Username username={this.props.item.username} />
+          <Comments comments={this.props.item.comments}/>
+          <Actions timestamp={this.props.item.timestamp}/>
         </div>
       </div>
     )

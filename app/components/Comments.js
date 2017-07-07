@@ -4,7 +4,7 @@ class Comments extends React.Component {
   render() {
     return (
       <div className='comments'>
-        comment
+        <p>{this.props.comments}</p>
       </div>
     )
   }

@@ -5,7 +5,7 @@ class Actions extends React.Component {
   render() {
     return (
       <div className='actions'>
-        <Timestamp/>
+        <Timestamp timestamp={this.props.timestamp}/>
       </div>
     )
   }
