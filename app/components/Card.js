@@ -8,7 +8,7 @@ class Card extends React.Component {
   render() {
     return (
       <div className='card'>
-        <Picture/>
+        <Picture url={this.props.item.url}/>
         <div className='user-info'>
           <Username/>
           <Comments/>

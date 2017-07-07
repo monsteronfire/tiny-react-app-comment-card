@@ -4,7 +4,7 @@ class Picture extends React.Component {
   render() {
     return (
       <div className='picture'>
-        picture
+        <img src={this.props.url}/>
       </div>
     )
   }
