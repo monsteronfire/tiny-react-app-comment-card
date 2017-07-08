@@ -3,9 +3,9 @@ import React from 'react';
 class Like extends React.Component {
   render() {
     return (
-      <span className='like'>
-        like
-      </span>
+      <button className={this.props.className} onClick={this.props.onClick}>
+        ♥
+      </button>
     )
   }
 }
