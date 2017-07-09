@@ -5,12 +5,9 @@ import Timestamp from './Timestamp';
 
 class Actions extends React.Component {
   render() {
-    const status = this.props.like ? 'love' : null;
-    //const status = 'love';
-
     return (
       <div className='actions'>
-        <Like className={status} onClick={this.props.onClick} />
+        <Like status={this.props.status} onClick={this.props.onClick} />
         <Reply/>
         <Timestamp timestamp={this.props.timestamp}/>
       </div>

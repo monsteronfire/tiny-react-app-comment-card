@@ -18,17 +18,20 @@ class Card extends React.Component {
     this.setState({
       like: !(this.state.like)
     });
+    console.log('clicked');
   }
 
 
   render() {
+    const status = this.state.like ? 'love' : null;
+
     return (
       <div className='card'>
         <Picture url={this.props.item.url}/>
         <div className='user-info'>
           <Username username={this.props.item.username} />
           <Comments comments={this.props.item.comments}/>
-          <Actions timestamp={this.props.item.timestamp} onClick={this.handleChick} />
+          <Actions timestamp={this.props.item.timestamp} onClick={this.handleClick} status={status} />
         </div>
       </div>
     )
